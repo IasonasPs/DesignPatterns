@@ -1,8 +1,8 @@
 ﻿namespace InversionOfControl.ProgramHelpers
 {
-    internal static class ConvertIntToIntArray
+    public static class ConvertIntToIntArray
     {
-        internal static int[] GetDigits(int id)
+        public static int[] GetDigits(int id)
         {
             return id.ToString().Select(d => d - '0').ToArray();
         }

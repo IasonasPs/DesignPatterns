@@ -15,6 +15,7 @@ namespace Strategy.FirstTry
         }
 
         //A setter method is provided to change the strategy at runtime
+        //That i actually the main strength of the Strategy design pattern?!
         public void SetStrategy(ICompression compression)
         {
             this.Compression = compression;

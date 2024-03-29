@@ -14,7 +14,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001_DependencyInversion", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003_DependencyInjection", "DependencyInjection\003_DependencyInjection.csproj", "{7689D1CD-B1E3-4DED-90DD-383DFF2B56DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{BE446541-CC81-4C45-9983-31BB68354194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004_Strategy", "Strategy\004_Strategy.csproj", "{BE446541-CC81-4C45-9983-31BB68354194}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Principles", "Principles", "{3DFB2CC9-E20C-45D5-8FF1-0F5DC798408B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosed_Principle", "OpenClosed_Principle\OpenClosed_Principle.csproj", "{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +42,16 @@ Global
 		{BE446541-CC81-4C45-9983-31BB68354194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE446541-CC81-4C45-9983-31BB68354194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE446541-CC81-4C45-9983-31BB68354194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B} = {3DFB2CC9-E20C-45D5-8FF1-0F5DC798408B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E53C3368-C7A4-4B7D-A4B5-15A3CA3137E0}

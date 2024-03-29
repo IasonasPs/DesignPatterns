@@ -26,4 +26,25 @@ namespace Strategy
             Console.ReadLine();
         }
     }
+
+
+    public interface ITest
+    {
+        int num { get; set; }
+    }
+
+    public interface ITest2 : ITest
+    {
+        string text { get; set; }
+    }
+
+    public interface ITest3 : ITest2
+    {
+        double d { get; set; }
+    }
+
+    public class myNUmber : ITest3
+    {
+    }
+
 }

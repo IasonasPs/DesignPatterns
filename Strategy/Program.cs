@@ -1,7 +1,10 @@
-﻿using OpenClosed_Principle;
+﻿using Microsoft.Extensions.DependencyInjection;
+using OpenClosed_Principle;
 using Strategy._2nd;
+using Strategy._3d_Example;
 using Strategy.FirstTry;
-
+using System.ComponentModel.Design;
+using System.Runtime.InteropServices.Marshalling;
 using DeveloperReport = Strategy._2nd.DeveloperReport;
 
 
@@ -14,8 +17,8 @@ namespace Strategy
             Console.WriteLine("!");
 
             //FirstTryMain();
-
             SecondTryMain();
+            //ThirdTryMain();
         }
 
         public static void FirstTryMain()
@@ -32,7 +35,6 @@ namespace Strategy
 
             Console.ReadLine();
         }
-
         public static void SecondTryMain()
         {
 
@@ -41,19 +43,32 @@ namespace Strategy
                 new DeveloperReport {  Id = 1, Name = "Dev1" , Level = DeveloperLevel.Junior , HourlyRate = 4.0 , WorkingHours = 100},
                 new DeveloperReport {  Id = 2, Name = "Dev2" , Level = DeveloperLevel.Junior , HourlyRate = 4.0 , WorkingHours = 100},
                 new DeveloperReport {  Id = 3, Name = "Dev3" , Level = DeveloperLevel.Senior , HourlyRate = 22.0 , WorkingHours = 100},
+                new DeveloperReport {  Id = 4, Name = "Dev4" , Level = DeveloperLevel.Senior , HourlyRate = 22.0 , WorkingHours = 100},
             };
 
+            SalaryCalculator salaryCalculator = new SalaryCalculator(new JuniorDevSalaryCalculator());
 
-            JuniorDevSalaryCalculator juniorDevSalaryCalculator = new JuniorDevSalaryCalculator();
-            SeniorDevSalaryCalculator seniorDevSalaryCalculator = new SeniorDevSalaryCalculator();
+            double t =  salaryCalculator.Calculate(reports);
+            Console.WriteLine(t);
+
+            salaryCalculator.SetCalculator(new SeniorDevSalaryCalculator());
+
+            double s = salaryCalculator.Calculate(reports);
+            Console.WriteLine(s);
+
+        }
+        public static void ThirdTryMain()
+        {
+            ServiceProvider serviceProvider = new  ServiceCollection()
+                .AddScoped<IMovieStrategy,M>()
+                .AddScoped<Context>()
+                .BuildServiceProvider();
 
 
-            var juniorTotal = juniorDevSalaryCalculator.CalculateTotalSalary(reports);
-
-            var seniortotal = seniorDevSalaryCalculator.CalculateTotalSalary(reports);
-
-            Console.WriteLine(juniorTotal + seniortotal);
         }
     }
+
+
+
 }
 

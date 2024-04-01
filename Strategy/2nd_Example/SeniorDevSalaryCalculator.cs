@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Strategy._2nd
 {
-    internal class JuniorDevSalaryCalculator : ISalaryCalculator
+    internal class SeniorDevSalaryCalculator : ISalaryCalculator //Concrete Strategy
     {
-
         public double CalculateTotalSalary(IEnumerable<DeveloperReport> reports)
-            => reports.Where(r => r.Level == DeveloperLevel.Junior).Select(r => r.CalculateSalary()).Sum();
+            => reports.Where(r => r.Level == DeveloperLevel.Senior).Select(r => r.CalculateSalary()).Sum();
     }
 }

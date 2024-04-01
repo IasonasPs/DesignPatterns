@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004_Strategy", "Strategy\00
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Principles", "Principles", "{3DFB2CC9-E20C-45D5-8FF1-0F5DC798408B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosed_Principle", "OpenClosed_Principle\OpenClosed_Principle.csproj", "{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenClosed_Principle", "OpenClosed_Principle\OpenClosed_Principle.csproj", "{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_DependencyInjection", "002_DependencyInjection\002_DependencyInjection.csproj", "{EAA04AFC-3A64-4862-90DA-EC3319A3977A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD5E26D-35C9-402B-98CC-6CECAD4BCE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA04AFC-3A64-4862-90DA-EC3319A3977A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA04AFC-3A64-4862-90DA-EC3319A3977A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA04AFC-3A64-4862-90DA-EC3319A3977A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA04AFC-3A64-4862-90DA-EC3319A3977A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

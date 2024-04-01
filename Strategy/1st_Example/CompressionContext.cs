@@ -1,5 +1,4 @@
-﻿using System;
-namespace Strategy.FirstTry
+﻿namespace Strategy.FirstTry
 {
     internal class CompressionContext
     {

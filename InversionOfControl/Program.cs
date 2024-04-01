@@ -1,6 +1,5 @@
 ﻿using InversionOfControl.BusinessLogic;
 using InversionOfControl.Entities;
-using System.ComponentModel;
 
 namespace InversionOfControl
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Strategy.FirstTry
+﻿namespace Strategy.FirstTry
 {
     //Concrete Strategy 
     internal class Rar : ICompression

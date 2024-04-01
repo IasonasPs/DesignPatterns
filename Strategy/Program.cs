@@ -1,10 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using OpenClosed_Principle;
 using Strategy._2nd;
 using Strategy._3d_Example;
 using Strategy.FirstTry;
-using System.ComponentModel.Design;
-using System.Runtime.InteropServices.Marshalling;
 using DeveloperReport = Strategy._2nd.DeveloperReport;
 
 
